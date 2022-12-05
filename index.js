@@ -85,3 +85,7 @@ function displayBooks() {
 function saveData() {
     localStorage.setItem('books', JSON.stringify(books))
 }
+
+document.querySelector('#submit--button').addEventListener('click', () => {
+    addBook();
+}) 
