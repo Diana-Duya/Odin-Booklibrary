@@ -69,3 +69,19 @@ function displayBooks() {
         card.appendChild(innerCard) 
         });      
     }
+
+    function addBook() {
+        document.querySelector('.card').innerHTML = ''        
+        const title = document.querySelector('#title').value
+        const pages = document.querySelector('#author').value
+        const author = document.querySelector('#page').value
+        const newBook = new Book(title, author, pages);
+        // Make sure you use the object returned from the class call "newBook"
+        books.push(newBook) ;
+        displayBooks();
+        saveData();    
+}
+
+function saveData() {
+    localStorage.setItem('books', JSON.stringify(books))
+}
