@@ -89,3 +89,9 @@ function saveData() {
 document.querySelector('#submit--button').addEventListener('click', () => {
     addBook();
 }) 
+
+document.querySelector('.card').addEventListener('click', (e) => {
+    if(e.target.className === 'remove') {
+        e.target.parentElement.remove()
+    }   
+ }) 
