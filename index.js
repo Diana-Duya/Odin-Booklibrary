@@ -1,3 +1,12 @@
+class Book{
+    constructor(title, pages, author) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    
+}
+}
+
 let books;
 
 // Retrieves data from local storage
