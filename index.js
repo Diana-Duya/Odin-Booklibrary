@@ -95,3 +95,5 @@ document.querySelector('.card').addEventListener('click', (e) => {
         e.target.parentElement.remove()
     }   
  }) 
+
+ displayBooks();
